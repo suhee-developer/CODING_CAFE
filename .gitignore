@@ -1,4 +1,11 @@
-# Compiled class file
+
+/.project
+/target
+/.classpath
+/bin
+/.settings
+/src/main/webapp/WEB-INF/views/mypage/checkout.jsp
+
 *.class
 
 # Log file
