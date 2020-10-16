@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.selectTap{
+	width  : 100%;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+.optionList{
+	background: #cccccc;
+    height: 60vh;
+    margin-bottom: 2vh;
+}
+.optionList>div{
+	display: none;
+	width: -webkit-fill-available;
+}
+.selectTap>button{
+	font-size: 2vh;
+}
+.goPay{
+	font-size: 3vh;
+}
+.optList button{
+	margin : 2%;	
+}
+.optActiv{
+	border-bottom: solid 0.5vh;
+}
