@@ -14,8 +14,8 @@
 		<property name="driverClassName"
 			value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
 		<property name="jdbcUrl"
-			value="jdbc:log4jdbc:oracle:thin:@localhost:1521:XE"></property>
-		<property name="username" value="codingcafe"></property>
+			value="jdbc:log4jdbc:oracle:thin:@database-1.cugt9fwpkxzj.us-east-2.rds.amazonaws.com:1521:orcl"></property>
+		<property name="username" value="admin"></property>
 		<property name="password" value="codingcafe"></property>
 
 	</bean>
