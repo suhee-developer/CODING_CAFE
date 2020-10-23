@@ -44,5 +44,4 @@
                 관리자 호출</a>
             </div>
         </div>
-        <div class="bodyArea">
-        </div>
+      
