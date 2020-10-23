@@ -31,33 +31,17 @@ import lombok.Setter;
 
 
 @Controller
-@RequestMapping("ticket/*")
-public class TicketController {
+//@RequestMapping("payment/*")
+public class PaymentController {
 	
 	
-	private static final Logger logger = LoggerFactory.getLogger(TicketController.class);
+	private static final Logger logger = LoggerFactory.getLogger(PaymentController.class);
 	
-	@Autowired
-	TicketService ts;
-	
-	@RequestMapping(value = "/show", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		System.out.println("티켓고르기");
-		return "ticket";
+	@RequestMapping(value = "/payment", method = RequestMethod.GET)
+	public String pay(@RequestParam("code") String code) {
+		System.out.println("결제하기:"+code);
+		return "home";
 	}
 
 
-	@GetMapping(value = "/optList")
-	public ResponseEntity<List<TicketOptVO>> getOptList(@RequestParam("type") String type,ModelAndView mv) {
-		
-		
-		for(TicketOptVO vo :ts.getOptList(type)) {
-			System.out.println(vo);
-		}
-		
-		ResponseEntity<List<TicketOptVO>>re = new ResponseEntity<List<TicketOptVO>>(ts.getOptList(type),HttpStatus.OK);
-		return re;
-	}
-	
-	
 }
